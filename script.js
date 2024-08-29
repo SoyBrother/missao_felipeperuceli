@@ -1,21 +1,4 @@
 const caixaPrincipal = document.querySelector(".caixa-principal");
-const caixaPeerguntas = document.querySelector(".caixa-pergunta");
-const caixaAlternativa = document.querySelector(".caixa-Alternativa");
-const caixaResultado = document.querySelector(".caixa-resultado");
-const textoResultado = document.querySelector(".texto-resultado");
-
-const perguntas = [
-    { //primeiro objeto da lista de perguntas
-        enunciado: "pergunta1",
-        alternativas: ["alternativa1", "alternativa2"]
-    },
-    { //segundo objeto da lista de perguntas
-        enunciado: "pergunta2",
-        alternativa: ["alternativa1", "alternativa2"]
-
-    }
-]
-const caixaPrincipal = document.querySelector(".caixa-principal");
 const caixaPerguntas = document.querySelector(".caixa-perguntas");
 const caixaAlternativas = document.querySelector(".caixa-alternativas");
 const caixaResultado = document.querySelector(".caixa-resultado");
@@ -69,7 +52,7 @@ let atual = 0;
 let perguntaAtual;
 let historiaFinal = "";
 
-function mostraPergunta () {
+function mostraPergunta() {
    if (atual >= perguntas.length) {
       mostraResultado () ;
      return;
@@ -81,25 +64,25 @@ function mostraPergunta () {
      mostraAlternativas ();
     }
 
-function mostraAlternativas () {
+function mostraAlternativas() {
      for (const alternativa of perguntaAtual.alternativas) {
        const botaoAlternativa = document.createElement ("button") ;
     botaoAlternativa.textContent = alternativa.texto;
     botaoAlternativa.addEventListener ("click", ()=>
-respostaSelecionada (alternativa)) ;
+respostaSelecionada(alternativa)) ;
     caixaAlternativas.appendChild(botaoAlternativa) ;
     }
 }
-function respostaSelecionada (opcaoSelecionada) {
+function respostaSelecionada(opcaoSelecionada) {
      const afirmacao = opcaoSelecionada.afirmacao;
      historiaFinal += afirmacao + " ";
      atual++
-     mostraPergunta () ;
+     mostraPergunta() ;
 }
 
-function mostraResultado () {
+function mostraResultado() {
      caixaPerguntas.textContent = "Resumindo...";
      textoResultado.textContent = historiaFinal;
      caixaAlternativas.textContent = "";
 }
-mostraPergunta () ;
+mostraPergunta() ;
