@@ -6,43 +6,43 @@ const textoResultado = document.querySelector(".texto-resultado");
 
 const perguntas = [
     {
-        enunciado: "Como você acredita que podemos combater o racismo na sociedade?",
+        enunciado: "Qual estilo de rock você prefere?",
         alternativas: [
             {
-                texto: "Participando de campanhas de conscientização e educação sobre igualdade racial.",
-                afirmacao: "afirmacao1"
+                texto: "Rock clássico (Led Zeppelin, The Rolling Stones)",
+                afirmacao: "Você prefere o rock clássico, com suas raízes profundas e riffs marcantes que ajudaram a moldar o gênero."
             },
             {
-                texto: "Denunciando atos de discriminação e apoiando políticas públicas inclusivas.",
-                afirmacao: "afirmacao2"
+                texto: "Rock alternativo (Radiohead, Nirvana)",
+                afirmacao: "Você aprecia o rock alternativo, com suas letras introspectivas e sonoridade experimental."
             }
            
         ]
     },
     {
-        enunciado: "Como você pode ajudar a combater a disseminação de fake news, especialmente as que perpetuam o racismo?",
+        enunciado: "Qual elemento de uma música de rock mais te atrai?",
         alternativas: [
             {
-                texto: "Verificando a veracidade das informações antes de compartilhar qualquer conteúdo, especialmente sobre temas sensíveis como racismo.",
-                afirmacao: "afirmacao3"
+                texto: "Riffs de guitarra",
+                afirmacao: "Os riffs de guitarra são o que mais chamam sua atenção, levando o ritmo e a energia da música a outro nível."
             },
             {
-                texto: "Educando amigos e familiares sobre os perigos das fake news e incentivando-os a não compartilhar conteúdos falsos que perpetuam o racismo.",
-                afirmacao: "afirmacao4"
+                texto: "Letras profundas",
+                afirmacao: "Você gosta de músicas com letras profundas, que contam histórias ou exploram temas emocionais e existenciais."
             }
            
         ]
     },
     {
-        enunciado: "Como podemos incentivar o uso de energia solar e outras formas de energia limpa, especialmente em comunidades carentes?",
+        enunciado: "Qual tipo de vocal te agrada mais em uma música de rock?",
         alternativas: [
             {
-                texto: "Defendendo políticas públicas que subsidiem a energia solar para famílias de baixa renda.",
-                afirmacao:"afirmacao5"
+                texto: "Vocal agressivo e potente (System of a Down, Metallica)",
+                afirmacao:"Você prefere um vocal agressivo e potente, que transmite intensidade e emoção."
             },
             {
-                texto: "Promovendo a instalação de painéis solares em escolas e centros comunitários de comunidades marginalizadas.",
-                afirmacao:"afirmacao6"
+                texto: "Vocal suave e melódico (Pink Floyd, Pearl Jam)",
+                afirmacao:"Você gosta de um vocal suave e melódico, que proporciona uma experiência mais emocional e atmosférica."
             }
         ]
     }
